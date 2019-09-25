@@ -1,13 +1,13 @@
 # excScript
-# replace JP with your name 
+# replace Amer with your name 
 
 n=1
 for N in 0.1 1 50 
 do
-echo "Creating JP$n folder with N=$N"
+echo "Creating Amer$n folder with N=$N"
 
-mkdir JP${n}
-cd JP${n}
+mkdir Amer${n}
+cd Amer${n}
 cp ../inputOrig.txt ./
 cp ../input.txt ./
 sed -e "s/xxxx/${N}/" inputOrig.txt > input.txt
