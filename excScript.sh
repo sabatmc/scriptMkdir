@@ -1,13 +1,13 @@
 # excScript
-# replace Rashad with your name 
+# replace Ramzi with your name 
 
 n=1
 for N in 0.1 1 50 
 do
-echo "Creating Rashad$n folder with N=$N"
+echo "Creating Ramzi$n folder with N=$N"
 
-mkdir Rashad${n}
-cd Rashad${n}
+mkdir Ramzi${n}
+cd Ramzi${n}
 cp ../inputOrig.txt ./
 cp ../input.txt ./
 sed -e "s/xxxx/${N}/" inputOrig.txt > input.txt
