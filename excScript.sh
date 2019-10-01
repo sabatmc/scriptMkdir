@@ -1,13 +1,13 @@
 # excScript
-# replace Amer with your name 
+# replace Name with your name 
 
 n=1
 for N in 0.1 1 50 
 do
-echo "Creating Amer$n folder with N=$N"
+echo "Creating Name$n folder with N=$N"
 
-mkdir Amer${n}
-cd Amer${n}
+mkdir Name${n}
+cd Name${n}
 cp ../inputOrig.txt ./
 cp ../input.txt ./
 sed -e "s/xxxx/${N}/" inputOrig.txt > input.txt
