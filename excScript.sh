@@ -1,13 +1,15 @@
-# excScript
-# replace Name with your name 
+
+
+g# excScript
+Issam Dabboussi
 
 n=1
 for N in 0.1 1 50 
 do
-echo "Creating Name$n folder with N=$N"
+echo "Creating Issam$n folder with N=$N"
 
-mkdir Name${n}
-cd Name${n}
+mkdir Issam${n}
+cd Issam${n}
 cp ../inputOrig.txt ./
 cp ../input.txt ./
 sed -e "s/xxxx/${N}/" inputOrig.txt > input.txt
