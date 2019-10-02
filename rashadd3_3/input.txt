@@ -1,0 +1,3 @@
+300     !yyy bla tyyy 50
+50   !value of an input parameter that you're changing in the simulation
+300 50 u yyy

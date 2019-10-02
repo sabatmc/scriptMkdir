@@ -4,14 +4,20 @@
 n=1
 for N in 0.1 1 50 
 do
-echo "Creating rashadd$n folder with N=$N"
+m=1
+for M in 100 200 300
+do
+echo "Creating rashadd${n}_${m} folder with N=$N M=${M}"
 
-mkdir rashadd${n}
-cd rashadd${n}
+
+mkdir rashadd${n}_${m}
+cd rashadd${n}_${m}
 cp ../inputOrig.txt ./
 cp ../input.txt ./
-sed -e "s/xxxx/${N}/" inputOrig.txt > input.txt
+sed -e "s/xxxx/${N}/" -e "s/yyy/${M}/" inputOrig.txt > input.txt
 #here you can call an executable that will run your simulation using the input parameter
 cd ../
+m=$(( $m + 1 ))
+done
 n=$(( $n + 1 ))
 done
